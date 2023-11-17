@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./style4.css">
+  <link rel="shortcut icon" href="./harvard-university-01.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./style3.css">
+  <link rel="stylesheet" href="./style2.css">
+
+</head>
+
+<body>
+
+  <nav class="nav-container">
+    <div class="second-nav-container">
+      <div class="second-element1">
+        <a href="index.html"><img src="./logo-construction.png"></a>
+      </div>
+      <div class="second-element2">
+        <ul>
+          <li><a href="index.html" target="_blank">HOME</a></li>
+          <li><a href="index2.html" target="_blank">ABOUT</a></li>
+          <li><a href="index3.html" target="_blank">COURSE</a></li>
+          <li><a href="index4.html" target="_blank">BLOG</a></li>
+        </ul>
+      </div>
+      <div class="new-buttons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-bars" id="mobile-menu-btn"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="sidebar-container" id="sidebar">
+      <div class="close-btn">X</div>
+      <div class="sidebar-element">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="sidebar-element">
+        <a href="index2.html">ABOUT</a>
+      </div>
+      <div class="sidebar-element">
+        <a href="index3.html">COURSE</a>
+      </div>
+      <div class="sidebar-element">
+        <a href="index4.html">BLOG</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-img-container">
+    <img src="./resim6.png" class="c-img" alt="">
+    <div class="text">
+
+      <div class="card">
+        <div class="card-front">
+          <img src="./5695967.jpg" alt="Kart Resmi">
+        </div>
+        <div class="card-back">
+
+          <a href="https://ozelcapakoleji.com.tr/">
+            <div class="animated-border">
+              <p>Private CAPA COLLEGE</p>
+            </div>
+          </a>
+          <br><br>
+          <p class="">you won't regret it</p>
+          <br><br>
+          <p class="">Believe me!</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="blog-text">
+    <h1 style="margin-bottom: 20px;">Check our blog!</h1>
+    <p class="last">
+      Our school, which sets out with a different and superior approach to education, will break new ground in
+      Şanlıurfa. With its Enriched Education Model, our school contributes to the development of its students as a whole
+      in mental, emotional, physical, spiritual and social aspects by taking into account their individual differences
+      and contributing to them becoming individuals with an international identity. These studies enable academic
+      success to be at the highest level.
+
+      Our school attaches importance to foreign languages ​​and ensures that its students benefit from international
+      education programs as well as the national education curriculum.
+
+      To strengthen education and training with events organized in various sports, arts and social fields, to work with
+      a team that aims for quality, is experienced, expert and open to innovations, to provide an education and training
+      service where everyone can feel good by establishing effective and healthy communication with teachers, students,
+      parents, employees and the environment. offers.
+
+      Our school, which sets out with the understanding of serving humanity by educating highly qualified people in
+      every field, achieves this goal and provides the best service to its students.
+    </p>
+  </div>
+
+  <footer>
+    All rights reserved. 2021
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      var sidebar = document.getElementById('sidebar');
+      var closebtn = document.querySelector('.close-btn');
+
+      mobileMenuBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('show');
+      });
+
+      closebtn.addEventListener('click', function () {
+        sidebar.classList.remove('show');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

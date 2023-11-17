@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="shortcut icon" href="./harvard-university-01.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <div class="second-nav-container">
+            <div class="second-element1">
+                <a href="index.html"><img src="./logo-construction.png"></a>
+            </div>
+            <div class="second-element2">
+                <ul>
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="index2.html" target="_blank">ABOUT</a></li>
+                    <li><a href="index3.html" target="_blank">COURSE</a></li>
+                    <li><a href="index4.html" target="_blank">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="new-buttons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-bars" id="mobile-menu-btn"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-container" id="sidebar">
+            <div class="close-btn">X</div>
+            <div class="sidebar-element">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index2.html">ABOUT</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index3.html">COURSE</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index4.html">BLOG</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: relative;" class="c-img-container">
+        <div class="animation" style="position: absolute;"></div>
+        <img src="./resim6.png" class="c-img" alt="">
+        <div class="text">
+            Clubs that include social, cultural and sports activities; It is an indispensable part of modern education
+            in terms of helping our students gain self-confidence, express themselves, and develop physically, mentally
+            and emotionally.
+
+            From this point of view, more than ten different clubs in Private Çapa College will serve our students in
+            the 2016/2017 academic year to achieve this goal.
+
+            Our aim is to help our children realize their own talents and make the best decisions about clubs, which are
+            of great importance in determining their future goals, and to further develop them and progress in line with
+            their talents.
+        </div>
+    </div>
+
+    <div class="course-explanation">
+        <div class="graph-image">
+            <img src="./graph.jpg" alt="graph">
+        </div>
+        <div class="progress-new">
+            <h1 class="progress-new-header">Progress</h1>
+            <p class="progress-new-text">
+                Creativity, questioning, experience, individual and social learning, being
+                innovative and researcher are in the nature of children. Games, painting, sculpture, mathematics,
+                dance and music are just a few of its hundreds of languages. These installations provide an
+                environment where the child can reveal his potential and realize himself. The real success goal for
+                our students is to create products for national and international projects and to produce projects
+                in the age of science in our high school, which has highly developed technological equipment.
+
+                Our students are directed to projects with social responsibility tasks in order to ensure that they
+                are aware of their own learning responsibility, responsibility for their behavior, and
+                responsibilities towards themselves and their environment. students to participate in seminars and
+                conferences in line with their personal development; It is aimed for them to develop their own
+                individual portfolios in line with their talents in many branches of art and sports.
+            </p>
+        </div>
+    </div>
+
+
+    </main>
+    <footer>
+        All rights reserved. 2021
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            var sidebar = document.getElementById('sidebar');
+            var closebtn = document.querySelector('.close-btn');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                sidebar.classList.toggle('show');
+            });
+
+            closebtn.addEventListener('click', function () {
+                sidebar.classList.remove('show');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

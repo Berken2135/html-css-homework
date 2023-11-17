@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+body {
+  height: 100vh;
+  /* background-color: red; */
+}
+::selection {
+  color: orange;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+.Berken {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./WhatsApp\ Görsel\ 2023-10-26\ saat\ 19.02.18_1070d142.jpg);
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2% 6%;
+  top: 0px;
+  position: fixed;
+}
+
+nav img {
+  width: 150px;
+}
+.style {
+  display: flex;
+  text-align: right;
+  background-color: gray;
+  padding-left: 850px;
+  /* top: 0;
+    margin: 0;
+    position: sticky; */
+  margin-bottom: 60px;
+  width: max-content;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    5px,
+    white 5px 10px
+  );
+  padding-left: 1200px;
+  position: absolute;
+  z-index: -1;
+  left: -120px;
+}
+
+.style ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 14px;
+  position: relative;
+  transition: 0.2s;
+}
+.style ul li a {
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+}
+.style ul li a:hover {
+  color: blue;
+  transition: 1s;
+}
+.buttons i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.search-input {
+  font-size: 16px;
+}
+h4 {
+  color: lightgray;
+}
+.bilgi {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 1s;
+}
+.bilgi:hover {
+  color: darkblue;
+}
+.bilgi .bilgi2 {
+  font-size: 60px;
+}
+.aetiketi {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.aetiketi:hover {
+  border: 1px solid red;
+  background: red;
+  transition: 1s;
+}
+
+/* @media(max-width:700px){
+    .bilgi h1{
+        font-size: 20px;
+    }
+    .style ul li{
+        display:block;
+    }
+    .style{
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:0 ;
+        text-align: left;
+    }
+} */
+
+.sports {
+  display: flex;
+  margin-top: 50px;
+}
+.resim {
+  width: 800px;
+  height: 350px;
+  background-image: url(./mj-curry.jpg);
+  background: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resim2 {
+  width: 800px;
+  height: 350px;
+  background-image: url(./494497.jpg);
+  background: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resim3 {
+  width: 800px;
+  height: 350px;
+  background-image: url(./2004_Vanderbilt-Navy_Game_TE.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resim4 {
+  width: 800px;
+  height: 350px;
+  background-image: url(./650x344-futbol-nasil-oynanir-tff-futbol-saha-olculeri-oyun-kurallari-ve-tarihcesi-k1-1664541624806.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sporBasligi {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  margin: 40px 0 10px 0;
+}
+
+.heading {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: white;
+}
+.contact {
+  display: block;
+  margin-top: 40px;
+  background-color: black;
+}
+
+.contact .row {
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact .row .map {
+  flex: 1 1 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 450px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.contact .row form .inputbox {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  border: var(--border);
+}
+.contact .row form .inputbox i {
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.contact .row form .inputbox input {
+  width: 100%;
+  padding: 20px;
+  font-size: 17px;
+  color: white;
+  text-transform: none;
+  background: none;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* footer section start */
+
+.footer1 {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+}
+.footer .search {
+  display: flex;
+  justify-content: center;
+}
+.footer .search .search-input {
+  width: 300px;
+}
+.footer .search .btn {
+  background-color: red;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: black;
+  padding: 10px;
+  text-transform: none;
+  border-radius: 30px;
+}
+.footer .share {
+  padding: 20px 0;
+}
+.footer .share a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 3px;
+}
+.footer .share a:hover {
+  background-color: red;
+}
+/* Responsive start */
+@media (max-width: 992px) {
+}
+.button {
+  width: 400px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: start;
+  padding-left: 18px;
+  padding-top: 5px;
+}
+.fa-magnifying-glass {
+  font-size: 20px;
+}
+.paylas {
+  font-size: 40px;
+  gap: 40px;
+}
+.index {
+  width: 400px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  background-color: black;
+}
+.resim-common {
+  width: 400px;
+  height: 500px;
+  margin: 20px;
+}
+.resim-common:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.inputbox input {
+  border: 1px solid rgb(171, 167, 167);
+  border-radius: 10px;
+  height: 50px;
+  margin-left: 20px;
+  width: 150px;
+}
+.get-in-touch {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.map {
+  width: 300px;
+  height: 500px;
+  padding-bottom: 50px;
+  margin: 30px;
+}
+.btn {
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.paylas {
+  margin-top: 20px;
+}
+.footer-form {
+  margin-top: 30px;
+}
+.footer1 {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.footer {
+  height: 200px;
+}
+.h3-information-for-schedule {
+  width: 400px;
+}
+.active {
+  border-bottom: 1px solid black;
+}
+.second-element2 ul li:hover {
+  border-bottom: 1px solid black;
+}

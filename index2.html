@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="shortcut icon" href="./harvard-university-01.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <div class="second-nav-container">
+            <div class="second-element1">
+                <a href="index.html"><img src="./logo-construction.png"></a>
+            </div>
+            <div class="second-element2">
+                <ul>
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="index2.html" target="_blank">ABOUT</a></li>
+                    <li><a href="index3.html" target="_blank">COURSE</a></li>
+                    <li><a href="index4.html" target="_blank">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="new-buttons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-bars" id="mobile-menu-btn"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-container" id="sidebar">
+            <div class="close-btn">X</div>
+            <div class="sidebar-element">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index2.html">ABOUT</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index3.html">COURSE</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index4.html">BLOG</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 class="h1">About us</h1>
+        <h4 class="h4">What are the advantages of Çapa Educational Institution and Private School?</h4>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="resim2.jpeg" alt="Resim 1">
+            </div>
+
+            <div class="slide">
+                <img src="resim3.jpeg" alt="Resim 2">
+            </div>
+
+            <div class="slide">
+                <img src="resim6.png" alt="Resim 3">
+            </div>
+
+            <div class="slide">
+                <img src="resim7.jpg" alt="Resim 4">
+            </div>
+
+        </div>
+
+        <div class="caption">
+            <div class="bilgi">
+                <h1 class="bilgi2">Get Information About Us</h1> <br>
+                <h4>"Because we are number one..."</h4><br>
+                <a href="" class="aetiketi">check the link to learn more</a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <main class="main">
+        <div class="grid">
+            <h1 class="schedule">
+                Our schedule for highschool
+            </h1>
+            <img src="./5695967.jpg" alt="">
+        </div>
+
+        <div class="infos">
+            <h3 class="our-aim">
+                Our aim for students
+            </h3>
+            <div class="div-text">
+                <br><br>
+                <p class="information-for">
+                    Our goal; To raise individuals who are scientifically minded, conscious, investigative and
+                    creative,
+                    who are aware of their talents and develop them, who can look at events from multiple
+                    perspectives,
+                    who are productive and open to innovations, who are aware of responsibility, self-confident and
+                    loving, happy individuals.
+
+                    ÇAPA COLLEGE students, throughout their education, the process has been defined and all the
+                    details
+                    have been considered; It implements the education program in a seriously disciplined and
+                    high-quality manner, with personalized education, personalized system and 100% success rate.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="contact-info">
+                    <h1>Contact Information</h1>
+                    <p>Address: Çamlıyayla Mah. 6015. Sokak No:2 Karaköprü / ŞANLIURFA</p>
+                    <p>Phone: 0 (507) 406 80 18</p>
+                    <p>Email: ozelilkcapa@hotmail.com</p>
+                    <p>Our lessons time: 5 times a week / 8:30 - 16:30</p>
+                </div>
+                <div class="subscribe">
+                    <p>Be the first to know</p>
+                    <p>Get the latest information on events, product sales and offers. Sign up for the newsletter.
+                    </p>
+                    <label for="input">Email giriniz:</label>
+                    <input type="email" id="input" placeholder="email giriniz">
+                </div>
+                <div class="empty-box"></div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            var sidebar = document.getElementById('sidebar');
+            var closebtn = document.querySelector('.close-btn');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                sidebar.classList.toggle('show');
+            });
+
+            closebtn.addEventListener('click', function () {
+                sidebar.classList.remove('show');
+            });
+        });
+
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelector('.slider');
+            let totalSlides = document.querySelectorAll('.slide').length;
+
+            slideIndex++;
+            if (slideIndex > totalSlides) {
+                slideIndex = 1;
+            }
+
+            let translateValue = -(slideIndex - 1) * 100;
+            slides.style.transform = `translateX(${translateValue}%)`;
+
+            setTimeout(showSlides, 3000);
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+    </script>
+
+</body>
+
+</html>

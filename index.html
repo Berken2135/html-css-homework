@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./harvard-university-01.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- style2.css -->
+    <link rel="stylesheet" href="./style2.css">
+
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <div class="second-nav-container">
+            <div class="second-element1">
+                <a href="index.html"><img src="./logo-construction.png"></a>
+            </div>
+            <div class="second-element2">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index2.html" target="_blank">ABOUT</a></li>
+                    <li><a href="index3.html" target="_blank">COURSE</a></li>
+                    <li><a href="index4.html" target="_blank">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="new-buttons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-bars" id="mobile-menu-btn"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-container" id="sidebar">
+            <div class="close-btn">X</div>
+            <div class="sidebar-element">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index2.html">ABOUT</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index3.html">COURSE</a>
+            </div>
+            <div class="sidebar-element">
+                <a href="index4.html">BLOG</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="resim1.jpeg" alt="Resim 1">
+            </div>
+
+            <div class="slide">
+                <img src="resim2.jpeg" alt="Resim 2">
+            </div>
+
+            <div class="slide">
+                <img src="resim3.jpeg" alt="Resim 3">
+            </div>
+
+            <div class="slide">
+                <img src="resim4.jpeg" alt="Resim 4">
+            </div>
+
+        </div>
+
+        <div class="caption">
+            <div class="bilgi">
+                <h1 class="bilgi2">why is ÇAPA ?</h1> <br>
+                <h4>"Because we are number one..."</h4><br>
+                <a href="" class="aetiketi"> visit us to know more</a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+    <section class="sporBasligi">
+        <h3>Our sports</h3>
+    </section>
+
+    <div class="sports">
+        <div class="resim resim-common">
+        </div>
+        <div class="resim2 resim-common">
+        </div>
+        <div class="resim3 resim-common"></div>
+        <div class="resim4 resim-common"></div>
+    </div>
+
+    <!-- contact us -->
+
+    <section class="contact">
+        <h1 class="heading">Contact <span>us</span></h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12705.30323896388!2d38.8130453!3d37.2399766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15347b2eec5f3ff7%3A0xaeafbb0d0b3f3e74!2zxZ5hbmzEsXVyZmEgw4dhcGEgS29sZWpp!5e0!3m2!1str!2str!4v1698757441499!5m2!1str!2str"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <form class="get-in-touch">
+                <h3 class="get-in-touch"> Get in touch</h3>
+                <div class="inputbox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputbox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <i class="fas fa-phone"></i>
+                    <input type="phone" placeholder="phone number">
+                </div>
+                <input type="button" class="btn" value="contact now">
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <h1 class="footer1"> To want to search more</h1>
+    <section class="footer">
+
+        <form id="redirectForm" action="#" method="get">
+            <select id="pageSelect" class="index" onchange="redirectToPage()">
+                <option value="index.html">Home</option>
+                <option value="index2.html">About</option>
+                <option value="index3.html">Course</option>
+                <option value="index4.html">Blog</option>
+            </select>
+        </form>
+
+        <div class="paylas">
+            <a href="https://m.facebook.com/profile.php?id=321914837946375" class=" fab fa-facebook"></a>
+            <a href="https://twitter.com/capabilimkoleji" class=" fab fa-twitter"></a>
+            <a href="https://tr.pinterest.com/pin/990721618005846358/" class=" fab fa-pinterest"></a>
+            <a href="https://www.instagram.com/ozelcapakoleji/" class=" fab fa-instagram"></a>
+        </div>
+    </section>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", showSlides);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            var sidebar = document.getElementById('sidebar');
+            var closebtn = document.querySelector('.close-btn');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                sidebar.classList.toggle('show');
+            });
+
+            closebtn.addEventListener('click', function () {
+                sidebar.classList.remove('show');
+            });
+        });
+
+        function redirectToPage() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+            window.location.href = selectedValue;
+        }
+
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelector('.slider');
+            let totalSlides = document.querySelectorAll('.slide').length;
+
+            slideIndex++;
+            if (slideIndex > totalSlides) {
+                slideIndex = 1;
+            }
+
+            let translateValue = -(slideIndex - 1) * 100;
+            slides.style.transform = `translateX(${translateValue}%)`;
+
+            setTimeout(showSlides, 3000);
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+    </script>
+
+</body>
+
+</html>
